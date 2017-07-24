@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=9" />
+    <title>正则测试</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel='stylesheet'  href="/static/main.css" type="text/css"  />
+    <link rel='stylesheet'  href='https://cdn.staticfile.org/font-awesome/4.2.0/css/font-awesome.css' type='text/css' media='all' />
+    <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
+     <link rel="shortcut icon" href="/static/image/favicon.ico">
+     <style>.incap_page-tooltip{display:none;}</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="row">
+  <div class="col-xs-3 col-md-2"></div>
+    <div class="col-xs-9 col-md-8">
+
+      <form id="CheckForm" method="POST" action="/regex_ajax">
+        <div class="form-group">
+          <label for="url">测试网站</label>
+          <input type="url" class="form-control" id="url" name="url" placeholder="http://www.v2ex.com">
+        </div>
+        <div class="form-group">
+          <label for="word">正则表达式</label>
+          <input type="text" class="form-control" id="regex" name="regex">
+        </div>
+        <button type="submit" class="btn btn-default" id="check">检测</button>
+      </form>
+
+      <h2>测试结果</h2>
+      <div id="result" style="display: none;"></div>
+    </div>
+  <div class="col-xs-3 col-md-2"></div>
+  </div>
+
+
+<script type="text/JavaScript" src="/static/re_test.js"></script>
+</div>
+</body>
+
+</html>
